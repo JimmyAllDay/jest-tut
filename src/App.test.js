@@ -1,8 +1,14 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("Renders three list items", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const listItems = screen.getAllByRole("listitem");
+  expect(listItems).toHaveLength(3);
+});
+
+test("Renders title", () => {
+  render(<App />);
+  const spam = screen.getByTestId("spam");
+  expect(spam).toBeInTheDocument();
 });
