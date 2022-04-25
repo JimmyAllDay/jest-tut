@@ -1,14 +1,20 @@
 .button-style {
-  color: coral;
-  border: 1px solid goldenrod;
-  background-color: rgba(218, 165, 32, 0.11);
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  height: 40px;
+  font-size: 1em;
+  color: cornflowerblue;
+  border: 1px solid palegoldenrod;
+  background-color: rgba(238, 232, 170, 0.11);
+  padding: 5px 10px 5px 10px;
   border-radius: 5px;
+  margin-top: auto;
   cursor: pointer;
 }
 .button-style:hover {
-  background-color: rgba(218, 165, 32, 0.158);
+  background-color: rgba(238, 232, 170, 0.158);
+}
+
+.button-style:disabled {
+  color: rgba(100, 148, 237, 0.52);
+  border: 1px solid rgba(238, 232, 170, 0.413);
+  background-color: rgba(238, 232, 170, 0.11);
 }

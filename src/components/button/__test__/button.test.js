@@ -6,9 +6,3 @@ test("Renders Button component", () => {
   const button = screen.getByTestId("button");
   expect(button).toBeInTheDocument();
 });
-
-test("Renders the Button text", () => {
-  render(<App />);
-  const buttonText = screen.getByText(/click here/i);
-  expect(buttonText).toBeInTheDocument();
-});
